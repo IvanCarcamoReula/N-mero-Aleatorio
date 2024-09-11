@@ -1,0 +1,61 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #012341; /* Color de fondo deseado */
+  min-height: 100vh; /* Asegura que el fondo cubra al menos la altura completa de la ventana */
+  color: #fff;
+}
+
+
+/* Estilo del contenedor del número */
+.number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Altura para centrar la animación verticalmente */
+  
+}
+
+/* Estilo para mostrar el número */
+.number-display {
+  font-size: 96px; /* Tamaño grande del número */
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db; /* Color de fondo atractivo */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+  transform-origin: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #6c0aec; /* Color dorado para el botón */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para el botón */
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+button:hover {
+  background-color: #2d126b; /* Color dorado más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Efecto de escalado en el hover */
+}
+
+button:disabled {
+  background-color: #180b36; /* Color de botón deshabilitado */
+  cursor: not-allowed;
+}
+
+.app-container {
+  text-align: center;
+  margin-top: 50px;
+}
